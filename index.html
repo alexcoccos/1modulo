@@ -16,12 +16,15 @@
 
 <!-- avvia la tua app mediante il modulo -->
 
-<body>
+<body ng-app="applicazione" ng-init="user={nome: 'A', cognome: 'Miami'}">
 	<!-- inserisci le direttive di init e bind per visualizzare un titolo -->
-	<h1></h1>
+	<h1>Sugasti??</h1>
+	<h1>somma {{3+9}}</h1>
+	<h1>Bienvenido {{user.nome}} {{user.cognome}}</h1>
+	<h1 ng-bind="user.cognome"></h1>
 	<!-- installa angular caricalo e crea il tuo modulo -->
-	<script src=""></script>
-	<script src=""></script>
+	<script src="node_modules/angular/angular.min.js"></script>
+	<script src="app.js"></script>
 </body>
 
 </html>
